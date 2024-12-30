@@ -7,6 +7,7 @@ const { JWT_SECRET } = require("../config");
 const signup = async (req, res) => {
   console.log(req.body);
   try {
+    
     const { username, email, password, confirmPassword } = req.body;
 
     // Validate input
